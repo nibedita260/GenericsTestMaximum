@@ -7,7 +7,8 @@ namespace GenericsTestMaximum
         static void Main(string[] args)
         {
             FindMaximum findMaximum = new FindMaximum();
-            findMaximum.FindMax(4,11,5);
+            int x=findMaximum.FindMax(4,11,5);
+            Console.WriteLine(x);
         }
     }
 }
