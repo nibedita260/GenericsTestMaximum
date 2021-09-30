@@ -4,10 +4,12 @@ using System.Text;
 
 namespace GenericsTestMaximum
 {
-    class FindMaximum
+    class FindMaximum<T> where T : IComparable
     {
-        public int FindMax(int n1,int n2,int n3)
+        public T[] array;
+        public FindMaximum(T[] arr)
         {
+<<<<<<< HEAD
             Console.Write("The maximum among three numbers:");
             if(n1.CompareTo(n2)>0 && n1.CompareTo(n3)>0)
                 return n1;
@@ -38,6 +40,23 @@ namespace GenericsTestMaximum
             if (n3.CompareTo(n1) > 0 && n3.CompareTo(n2) > 0)
                 return n3;
             return null;
+=======
+            this.array = arr;
+        }
+        public T[] Sort()
+        {
+            Array.Sort(array);
+            return array;
+        }
+        public T FindMax()
+        {
+            T[] sorted = this.Sort();
+            return sorted[sorted.Length - 1];
+        }
+        public void PrintMax()
+        {
+            Console.WriteLine("Maximum Value is : " + this.FindMax());
+>>>>>>> UC5-PrintMaxUsingGenerics
         }
     }
 }
