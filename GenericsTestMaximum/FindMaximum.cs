@@ -21,5 +21,9 @@ namespace GenericsTestMaximum
             T[] sorted = this.Sort();
             return sorted[sorted.Length - 1];
         }
+        public void PrintMax()
+        {
+            Console.WriteLine("Maximum Value is : " + this.FindMax());
+        }
     }
 }
