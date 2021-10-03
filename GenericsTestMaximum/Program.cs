@@ -13,9 +13,9 @@ namespace GenericsTestMaximum
             FindMaximum<int> findMaximum1 = new FindMaximum<int>(intArray);
             FindMaximum<float> findMaximum2 = new FindMaximum<float>(floatArray);
             FindMaximum<string> findMaximum3 = new FindMaximum<string>(stringArray);
-            findMaximum1.PrintMax();
-            findMaximum2.PrintMax();
-            findMaximum3.PrintMax();
+            Console.WriteLine("Maximum Integer Number : " + findMaximum1.FindMax());
+            Console.WriteLine("Maximum Float Number : " + findMaximum2.FindMax());
+            Console.WriteLine("Maximum String : " + findMaximum3.FindMax());
         }
     }
 }
