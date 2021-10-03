@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GenericsTestMaximum
 {
-    class FindMaximum<T> where T : IComparable
+    public class FindMaximum<T> where T : IComparable
     {
         public T[] array;
         public FindMaximum(T[] arr)
