@@ -7,8 +7,8 @@ namespace GenericsTestMaximum
         static void Main(string[] args)
         {
             FindMaximum findMaximum = new FindMaximum();
-            string z=findMaximum.FindMax("Apple","Peach","Banana");
-            Console.WriteLine(z);
+            float y=findMaximum.FindMax(2.5F, 2.2F, 2.8F);
+            Console.WriteLine(y);
         }
     }
 }
