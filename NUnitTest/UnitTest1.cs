@@ -9,9 +9,9 @@ namespace NUnitTest
         [Test]
         public void Test1()
         {
-            string max = "Peach";
+            float max = 2.8f;
             FindMaximum findMaximum = new FindMaximum();
-            string res = findMaximum.FindMax("Apple", "Peach", "Banana");
+            float res = findMaximum.FindMax(2.5F, 2.2F, 2.8F);
             Assert.AreEqual(res, max);
         }
     }
