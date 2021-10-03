@@ -16,7 +16,6 @@ namespace GenericsTestMaximum
             if (n3.CompareTo(n1) > 0 && n3.CompareTo(n2) > 0)
                 return n3;
             return 0;
-<<<<<<< HEAD
         }
         public float FindMax(float n1, float n2, float n3)
         {
@@ -28,8 +27,6 @@ namespace GenericsTestMaximum
             if (n3.CompareTo(n1) > 0 && n3.CompareTo(n2) > 0)
                 return n3;
             return 0.0f;
-=======
->>>>>>> UC1-MaxNumber
         }
     }
 }
