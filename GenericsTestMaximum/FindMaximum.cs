@@ -4,22 +4,40 @@ using System.Text;
 
 namespace GenericsTestMaximum
 {
-    public class FindMaximum<T> where T : IComparable
+    public class FindMaximum
     {
-        public T[] array;
-        public FindMaximum(T[] arr)
+        public int FindMax(int n1, int n2, int n3)
         {
-            this.array = arr;
+            Console.Write("The maximum among three numbers:");
+            if (n1.CompareTo(n2) > 0 && n1.CompareTo(n3) > 0)
+                return n1;
+            if (n2.CompareTo(n1) > 0 && n2.CompareTo(n3) > 0)
+                return n2;
+            if (n3.CompareTo(n1) > 0 && n3.CompareTo(n2) > 0)
+                return n3;
+            return 0;
         }
-        public T[] Sort()
+        public float FindMax(float n1, float n2, float n3)
         {
-            Array.Sort(array);
-            return array;
+            Console.Write("The maximum among three floats:");
+            if (n1.CompareTo(n2) > 0 && n1.CompareTo(n3) > 0)
+                return n1;
+            if (n2.CompareTo(n1) > 0 && n2.CompareTo(n3) > 0)
+                return n2;
+            if (n3.CompareTo(n1) > 0 && n3.CompareTo(n2) > 0)
+                return n3;
+            return 0.0f;
         }
-        public T FindMax()
+        public string FindMax(string n1, string n2, string n3)
         {
-            T[] sorted = this.Sort();
-            return sorted[sorted.Length - 1];
+            Console.Write("The maximum among three string:");
+            if (n1.CompareTo(n2) > 0 && n1.CompareTo(n3) > 0)
+                return n1;
+            if (n2.CompareTo(n1) > 0 && n2.CompareTo(n3) > 0)
+                return n2;
+            if (n3.CompareTo(n1) > 0 && n3.CompareTo(n2) > 0)
+                return n3;
+            return null;
         }
     }
 }
