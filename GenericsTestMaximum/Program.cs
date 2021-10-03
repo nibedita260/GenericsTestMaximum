@@ -6,6 +6,7 @@ namespace GenericsTestMaximum
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             Console.WriteLine("Maximum among three:");
             int [] intArray = {4,11,7};
             float [] floatArray = { 2.5f,2.2f,2.8f};
@@ -16,6 +17,11 @@ namespace GenericsTestMaximum
             Console.WriteLine("Maximum Integer Number : " + findMaximum1.FindMax());
             Console.WriteLine("Maximum Float Number : " + findMaximum2.FindMax());
             Console.WriteLine("Maximum String : " + findMaximum3.FindMax());
+=======
+            FindMaximum findMaximum = new FindMaximum();
+            string z=findMaximum.FindMax("Apple","Peach","Banana");
+            Console.WriteLine(z);
+>>>>>>> UC3-MaximumStrings
         }
     }
 }
