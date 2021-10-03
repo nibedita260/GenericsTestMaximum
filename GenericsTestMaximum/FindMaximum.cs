@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GenericsTestMaximum
 {
-    class FindMaximum
+    public class FindMaximum
     {
         public int FindMax(int n1, int n2, int n3)
         {
